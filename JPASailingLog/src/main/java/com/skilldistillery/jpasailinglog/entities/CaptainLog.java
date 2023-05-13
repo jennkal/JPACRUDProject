@@ -1,5 +1,6 @@
 package com.skilldistillery.jpasailinglog.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,8 +16,22 @@ public class CaptainLog {
 	private int id;
 	
 	private String trip;
+	private String fixes;
 	
-	private String upgrades;
+	@Column(name = "port_of_arrival")
+	private String portOfArrival;
+	
+	@Column(name = "port_of_departure")
+	private String portOfDeparture;
+	
+	@Column(name = "arrival_link")
+	private String arrivalLink;
+	
+	@Column(name = "departure_link")
+	private String departureLink;
+	
+	@Column(name = "time_distance")
+	private String timeDistance;
 
 	public CaptainLog() {
 		super();
@@ -38,18 +53,58 @@ public class CaptainLog {
 		this.trip = trip;
 	}
 
-	public String getUpgrades() {
-		return upgrades;
+	public String getFixes() {
+		return fixes;
 	}
 
-	public void setUpgrades(String upgrades) {
-		this.upgrades = upgrades;
+	public void setFixes(String fixes) {
+		this.fixes = fixes;
+	}
+
+	public String getPortOfArrival() {
+		return portOfArrival;
+	}
+
+	public void setPortOfArrival(String portOfArrival) {
+		this.portOfArrival = portOfArrival;
+	}
+
+	public String getPortOfDeparture() {
+		return portOfDeparture;
+	}
+
+	public void setPortOfDeparture(String portOfDeparture) {
+		this.portOfDeparture = portOfDeparture;
+	}
+
+	public String getArrivalLink() {
+		return arrivalLink;
+	}
+
+	public void setArrivalLink(String arrivalLink) {
+		this.arrivalLink = arrivalLink;
+	}
+
+	public String getDepartureLink() {
+		return departureLink;
+	}
+
+	public void setDepartureLink(String departureLink) {
+		this.departureLink = departureLink;
+	}
+
+	public String getTimeDistance() {
+		return timeDistance;
+	}
+
+	public void setTimeDistance(String timeDistance) {
+		this.timeDistance = timeDistance;
 	}
 
 	@Override
 	public String toString() {
-		return "CaptainLog [id=" + id + ", trip=" + trip + ", upgrades=" + upgrades + "]";
+		return "CaptainLog [id=" + id + ", trip=" + trip + ", fixes=" + fixes + ", portOfArrival=" + portOfArrival
+				+ ", portOfDeparture=" + portOfDeparture + ", arrivalLink=" + arrivalLink + ", departureLink="
+				+ departureLink + ", timeDistance=" + timeDistance + "]";
 	}
-	
-	
 }

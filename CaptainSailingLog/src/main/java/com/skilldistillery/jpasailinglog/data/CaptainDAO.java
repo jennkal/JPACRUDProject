@@ -8,5 +8,8 @@ public interface CaptainDAO {
 	
 	CaptainLog findById(int captainLogId);
 	List<CaptainLog> findAll();
+	CaptainLog create(CaptainLog captainLog);
+	CaptainLog update(int id, CaptainLog captainLog);
+	boolean destroy(int id);
 
 }

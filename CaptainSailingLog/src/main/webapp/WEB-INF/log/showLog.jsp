@@ -12,11 +12,22 @@
 <jsp:include page="../navbar.jsp"/>
 <div class="container">
 	<c:choose>
-		<c:when test="${not empty captainLog}">
+		<c:when test="${not empty log}">
 			<h1>Details</h1>
 			<div>
-				<h4>${captainLog.trip}</h4>
+				<h4>${log.trip}</h4>
+				<h4>${log.fixes}</h4>
+				<h4>${log.portOfArrival}</h4>
+				<h4>${log.portOfDeparture}</h4>
+				<h4>${log.arrivalLink}</h4>
+				<h4>${log.departureLink}</h4>
+				<h4>${log.timeDistance}</h4>
+			<td><a href="updateLog.do?lid=${log.id}"> update log </a></td>
+			<br>
 			
+			<td><a href="addLog.do"> Add log </a></td>
+			<br>
+			<td><a href="deleteLog.do?lid=${log.id}"> Delete log </a></td>
 			</div>
 		</c:when>
 		

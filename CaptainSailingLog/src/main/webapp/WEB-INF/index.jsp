@@ -10,6 +10,8 @@
 </head>
 <body>
 <jsp:include page="navbar.jsp"/>
+<c:choose>
+<c:when test="${ ! empty logList }">
 	<div class="container-fluid">
 		<h1>Captain Log</h1>
 
@@ -33,12 +35,17 @@
 				<c:forEach var="log" items="${logList}">
 					<tr>
 						<td>${log.id }</td>
-						<td><a href="getLog.do?lid=${log.trip}"> ${log.trip} </a></td>
+						<td><a href="getLog.do?lid=${log.id}"> ${log.trip} </a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
 	</div>
+	</c:when>
+	<c:otherwise>
+		<p>Log Not Found</p>
+	</c:otherwise>
+	</c:choose>
 	<jsp:include page="bootstrapFoot.jsp" />
 </body>
 </html>
