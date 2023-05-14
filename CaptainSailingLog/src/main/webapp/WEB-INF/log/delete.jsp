@@ -38,7 +38,7 @@
 					<label for="distance">Distance :</label> 
 					<input type="text" name="distance"> 
 					<br> 
-					<input type="submit" value="Add Log">
+					<input class="btn btn-outline-danger" type="submit" value="Add Log">
 				</form>
 	</div>
 <jsp:include page="../bootstrapFoot.jsp"></jsp:include>
