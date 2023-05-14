@@ -18,9 +18,9 @@
 		<form action="getLog.do" method="GET">
 			<div class="row">
 				<div class="col-sm-8">
-					Trip ID: <input class="form-control" type="text" name="lid" />
+					Log ID: <input class="form-control" type="text" name="lid" />
 				</div>
-				<input class="col btn btn-primary" type="submit" value="Show Log" />
+				<input class="col btn btn-outline-success" type="submit" value="Show Log" />
 			</div>
 		</form>
 
@@ -28,7 +28,7 @@
 			<thead>
 				<tr>
 					<th>ID</th>
-					<th>Title</th>
+					<th>Captain Log</th>
 				</tr>
 			</thead>
 			<tbody>

@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `captain_log` ;
 CREATE TABLE IF NOT EXISTS `captain_log` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `trip` VARCHAR(45) NULL,
-  `fixes` VARCHAR(50) NULL,
+  `fixes` VARCHAR(100) NULL,
   `port_of_arrival` VARCHAR(50) NULL,
   `port_of_departure` VARCHAR(45) NULL,
   `arrival_link` VARCHAR(45) NULL,
@@ -55,6 +55,10 @@ INSERT INTO `captain_log` (`id`, `trip`, `fixes`, `port_of_arrival`, `port_of_de
 INSERT INTO `captain_log` (`id`, `trip`, `fixes`, `port_of_arrival`, `port_of_departure`, `arrival_link`, `departure_link`, `time`, `distance`) VALUES (4, 'Longboat Key', 'Upgrade rigging.', 'Longboat Key', '27.759501, -82.635008', 'https://goo.gl/maps/K7gSyXi1WgKgVuPb9', 'https://goo.gl/maps/sitc8LhTjbLV49G18', '7hrs', '30nm');
 INSERT INTO `captain_log` (`id`, `trip`, `fixes`, `port_of_arrival`, `port_of_departure`, `arrival_link`, `departure_link`, `time`, `distance`) VALUES (5, 'Manatee River', 'Dinghy repair.', 'Manatee River', '27.759501, -82.635008', 'https://goo.gl/maps/sitc8LhTjbLV49G18', 'https://goo.gl/maps/sitc8LhTjbLV49G18', '4.5hrs', '14nm');
 INSERT INTO `captain_log` (`id`, `trip`, `fixes`, `port_of_arrival`, `port_of_departure`, `arrival_link`, `departure_link`, `time`, `distance`) VALUES (6, 'Egmont Key', 'Dinghy repair', 'Egmont Key', '27.759501, -82.635008', 'https://goo.gl/maps/EMDw6sN25gmep1Sm8', 'https://goo.gl/maps/sitc8LhTjbLV49G18', '4hrs', '30nm');
+INSERT INTO `captain_log` (`id`, `trip`, `fixes`, `port_of_arrival`, `port_of_departure`, `arrival_link`, `departure_link`, `time`, `distance`) VALUES (7, 'Staniel Cay', 'Battery maintenance', 'The Bahamas', '27.759501, -82.635008', 'https://goo.gl/maps/EMDw6sN25gmep1Sm8', 'https://goo.gl/maps/EJHy3dqStcyzFCgP7', '100hrs', '500nm');
+INSERT INTO `captain_log` (`id`, `trip`, `fixes`, `port_of_arrival`, `port_of_departure`, `arrival_link`, `departure_link`, `time`, `distance`) VALUES (8, 'Chub Cay', 'maintenance', 'The Bahamas', '27.759501, -82.635008', 'https://goo.gl/maps/EMDw6sN25gmep1Sm8', 'https://goo.gl/maps/o8jq9Fn73RPNxtmB7', '78hrs', '350nm');
+INSERT INTO `captain_log` (`id`, `trip`, `fixes`, `port_of_arrival`, `port_of_departure`, `arrival_link`, `departure_link`, `time`, `distance`) VALUES (9, 'Key West', 'Fiberglass repair/reinforcement for the windlass', 'Key West', '27.759501, -82.635008', 'https://goo.gl/maps/EMDw6sN25gmep1Sm8', 'https://goo.gl/maps/NPXe5Cw6poo6VdCc8', '49hrs', '220nm');
+INSERT INTO `captain_log` (`id`, `trip`, `fixes`, `port_of_arrival`, `port_of_departure`, `arrival_link`, `departure_link`, `time`, `distance`) VALUES (10, 'No Name Harbor', 'Final Checks for crossing to The Bahamas, paperwork Mostly', 'Miami, FL', '27.759501, -82.635008', 'https://goo.gl/maps/EMDw6sN25gmep1Sm8', 'https://goo.gl/maps/X26ULZCvznHGg1Ty7', '56hrs', '280nm');
 
 COMMIT;
 

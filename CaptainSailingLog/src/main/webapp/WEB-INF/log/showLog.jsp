@@ -21,7 +21,8 @@
 				<h4>${log.portOfDeparture}</h4>
 				<h4>${log.arrivalLink}</h4>
 				<h4>${log.departureLink}</h4>
-				<h4>${log.timeDistance}</h4>
+				<h4>${log.time}</h4>
+				<h4>${log.distance}</h4>
 			<td><a href="updateLog.do?lid=${log.id}"> update log </a></td>
 			<br>
 			

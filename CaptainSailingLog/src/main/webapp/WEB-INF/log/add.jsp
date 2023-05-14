@@ -32,8 +32,11 @@
 					<label for="departure_link">Departure Link :</label> 
 					<input type="text" name="departureLink"> 
 					<br> 
-					<label for="time_distance">Time-distance :</label> 
-					<input type="text" name="timeDistance"> 
+					<label for="time">Time :</label> 
+					<input type="text" name="time"> 
+					<br> 
+					<label for="distance">Distance :</label> 
+					<input type="text" name="distance"> 
 					<br> 
 					<input type="submit" value="Add Log">
 				</form>
