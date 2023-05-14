@@ -30,8 +30,9 @@ public class CaptainLog {
 	@Column(name = "departure_link")
 	private String departureLink;
 	
-	@Column(name = "time_distance")
-	private String timeDistance;
+	private String time;
+	
+	private String distance;
 
 	public CaptainLog() {
 		super();
@@ -93,18 +94,28 @@ public class CaptainLog {
 		this.departureLink = departureLink;
 	}
 
-	public String getTimeDistance() {
-		return timeDistance;
+	public String getTime() {
+		return time;
 	}
 
-	public void setTimeDistance(String timeDistance) {
-		this.timeDistance = timeDistance;
+	public void setTime(String time) {
+		this.time = time;
+	}
+
+	public String getDistance() {
+		return distance;
+	}
+
+	public void setDistance(String distance) {
+		this.distance = distance;
 	}
 
 	@Override
 	public String toString() {
 		return "CaptainLog [id=" + id + ", trip=" + trip + ", fixes=" + fixes + ", portOfArrival=" + portOfArrival
 				+ ", portOfDeparture=" + portOfDeparture + ", arrivalLink=" + arrivalLink + ", departureLink="
-				+ departureLink + ", timeDistance=" + timeDistance + "]";
+				+ departureLink + ", time=" + time + ", distance=" + distance + "]";
 	}
+
+	
 }

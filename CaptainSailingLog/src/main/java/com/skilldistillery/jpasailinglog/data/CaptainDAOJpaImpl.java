@@ -67,7 +67,8 @@ public class CaptainDAOJpaImpl implements CaptainDAO{
 		  managed.setPortOfDeparture(captainLog.getPortOfDeparture());
 		  managed.setArrivalLink(captainLog.getArrivalLink());
 		  managed.setDepartureLink(captainLog.getDepartureLink());
-		  managed.setTimeDistance(captainLog.getTimeDistance());
+		  managed.setTime(captainLog.getTime());
+		  managed.setDistance(captainLog.getDistance());
 System.out.println("set values" + managed);
 		em.flush();
 		

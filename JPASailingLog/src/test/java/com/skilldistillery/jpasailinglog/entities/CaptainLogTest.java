@@ -42,9 +42,17 @@ class CaptainLogTest {
 	}
 
 	@Test
-	void test_trip_not_empty() {
+	void test_Log_not_empty() {
 		assertNotNull(captainLog);
+		
 		assertEquals("Bahamas", captainLog.getTrip());
+		assertEquals("Why's the rum always gone.", captainLog.getFixes());
+		assertEquals("George Town, The Bahamas", captainLog.getPortOfArrival());
+		assertEquals("27.759501, -82.635008", captainLog.getPortOfDeparture());
+		assertEquals("https://goo.gl/maps/etVmS63d2gGkbuhc6", captainLog.getArrivalLink());
+		assertEquals("https://goo.gl/maps/xB9qYYcZQQMRcXeR8", captainLog.getDepartureLink());
+		assertEquals("80hrs", captainLog.getTime());
+		assertEquals("635nm", captainLog.getDistance());
 	}
 
 }
