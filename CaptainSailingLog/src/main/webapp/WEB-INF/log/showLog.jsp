@@ -11,11 +11,12 @@
 <body>
 <jsp:include page="../navbar.jsp"/>
 <div class="container">
+
 	<c:choose>
 		<c:when test="${not empty log}">
 			<h1>Details:</h1>
-			<div>
-				<h4>Trip:</h4><h6>${log.trip}</h6>
+				<h4>Trip:</h4>
+				<p>${log.trip}</p>
 				<br>
 				<h4>Fixes:</h4><h6>${log.fixes}</h6>
 				<br>
@@ -36,14 +37,14 @@
 			<td><a href="addLog.do"> Add log </a></td>
 			<br>
 			<td><a href="deleteLog.do?lid=${log.id}"> Delete log </a></td>
-			</div>
 		</c:when>
 		
 		<c:otherwise>
 			<h3>Log Not Found</h3>
 		</c:otherwise>
 	</c:choose>
-</div>
+	</div>
+
 <jsp:include page="../bootstrapFoot.jsp"></jsp:include>
 </body>
 </html>
