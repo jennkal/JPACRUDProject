@@ -14,29 +14,30 @@
 		
 				<form action="performUpdate.do?lid=${log.id }" method="GET">
 					<input type="hidden" name="id" value="${log.id}"> 
-					<label for="trip">Trip :</label> 
-					<input type="text" name="trip" required> 
+					
+					<label for="trip" class="form-label">Trip :</label> 
+					<input type="text" class="form-control" name="trip" required> 
 					<br> 
-					<label for="fixes">fixes :</label> 
-					<input type="text" name="fixes"> 
+					<label for="fixes" class="form-label">fixes :</label> 
+					<input type="text" class="form-control" name="fixes"> 
 					<br>
-					<label for="port_of_arrival">Port of Arrival :</label> 
-					<input type="text" name="portOfArrival" required> 
+					<label for="port_of_arrival" class="form-label">Port of Arrival :</label> 
+					<input type="text" class="form-control" name="portOfArrival" required> 
 					<br>
-					<label for="port_of_departure">Port of Departure :</label> 
-					<input type="text" name="portOfDeparture" required> 
+					<label for="port_of_departure" class="form-label">Port of Departure :</label> 
+					<input type="text" class="form-control" name="portOfDeparture" required> 
 					<br> 
-					<label for="arrival_link">Arrival Link :</label> 
-					<input type="text" name="arrivalLink"> 
+					<label for="arrival_link" class="form-label">Arrival Link :</label> 
+					<input type="text" class="form-control" name="arrivalLink"> 
 					<br> 
-					<label for="departure_link">Departure Link :</label> 
-					<input type="text" name="departureLink"> 
+					<label for="departure_link" class="form-label">Departure Link :</label> 
+					<input type="text" class="form-control" name="departureLink"> 
 					<br> 
-					<label for="time">Time :</label> 
-					<input type="text" name="time"> 
+					<label for="time" class="form-label">Time :</label> 
+					<input type="text" class="form-control" name="time"> 
 					<br> 
-					<label for="distance">Distance :</label> 
-					<input type="text" name="distance"> 
+					<label for="distance" class="form-label">Distance :</label> 
+					<input type="text" class="form-control" name="distance"> 
 					<br> 
 					<input class="btn btn-outline-warning" type="submit" value="Update Log">
 				</form>
