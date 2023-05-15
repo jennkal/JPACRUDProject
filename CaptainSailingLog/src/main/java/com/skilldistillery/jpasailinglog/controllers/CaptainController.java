@@ -81,7 +81,7 @@ public class CaptainController {
 
 		captainDAO.destroy(lid);
 
-		return "index";
+		return "log/delete";
 	}
 
 	

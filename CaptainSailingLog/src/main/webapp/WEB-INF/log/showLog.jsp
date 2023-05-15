@@ -13,19 +13,26 @@
 <div class="container">
 	<c:choose>
 		<c:when test="${not empty log}">
-			<h1>Details</h1>
+			<h1>Details:</h1>
 			<div>
-				<h4>${log.trip}</h4>
-				<h4>${log.fixes}</h4>
-				<h4>${log.portOfArrival}</h4>
-				<h4>${log.portOfDeparture}</h4>
+				<h4>Trip:</h4><h6>${log.trip}</h6>
+				<br>
+				<h4>Fixes:</h4><h6>${log.fixes}</h6>
+				<br>
+				<h4>Port of Arrival:</h4><h6>${log.portOfArrival}</h6>
+				<br>
+				<h4>Port of Departure:</h4><h6>${log.portOfDeparture}</h6>
+				<br>
 				<h4><a href="${log.arrivalLink}">Show Me Arrival Port</a></h4>
+				<br>
 				<h4><a href="${log.departureLink}">Show Me Departure Port</a></h4>
-				<h4>${log.time}</h4>
-				<h4>${log.distance}</h4>
+				<br>
+				<h4>Time:</h4><h6>${log.time}</h6>
+				<br>
+				<h4>Distance:</h4><h6>${log.distance}</h6>
+				<br>
 			<td><a href="updateLog.do?lid=${log.id}"> update log </a></td>
 			<br>
-			
 			<td><a href="addLog.do"> Add log </a></td>
 			<br>
 			<td><a href="deleteLog.do?lid=${log.id}"> Delete log </a></td>
